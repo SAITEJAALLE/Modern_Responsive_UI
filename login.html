@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alle – Login</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter&display=swap" rel="stylesheet">
+</head>
+<body class="page login-page">
+
+  <div class="bg-anim"></div>
+
+  <div class="container">
+    <div class="logo">
+      <img src="assets/logo.svg" alt="Alle Logo" width="100" />
+    </div>
+
+    <form class="glass-card" id="loginForm">
+      <h2>Login</h2>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="you@alle.com" required />
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <div class="password-wrapper">
+          <input type="password" id="password" placeholder="••••••••" required />
+          <span class="toggle-eye" onclick="togglePassword(this)">👁️</span>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-glow">Enter</button>
+
+      <p class="transition-link">
+        Not registered? <a href="register.html" class="flip-transition">Create account</a>
+      </p>
+    </form>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
