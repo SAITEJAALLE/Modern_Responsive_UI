@@ -19,11 +19,12 @@ document.querySelectorAll('.flip-transition').forEach(link => {
 // Optional: Parallax Effect (Mouse Movement)
 document.addEventListener('mousemove', e => {
   const layers = document.querySelectorAll('.glass-card, .logo span');
-  const x = (window.innerWidth - e.pageX * 20) / 90;
-  const y = (window.innerHeight - e.pageY * 20) / 90;
+  const x = (window.innerWidth - e.pageX * 90) / 90;
+  const y = (window.innerHeight - e.pageY * 90) / 90;
 
   layers.forEach(layer => {
     layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
   });
 
 });
+
